@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Projek - Desain UI Sistem Pencatatan Hutang</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 55%;
+      gap: 20px;
+      min-width: 320px;
+    }
+
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 35%;
+      gap: 20px;
+      min-width: 280px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    /* Deskripsi */
+    .card-desc h1 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #007bff;
+    }
+
+    .card-desc p {
+      line-height: 1.7;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .card-desc ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .card-desc ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Video Mockup HP */
+    .card-video {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+    }
+
+    .phone-mockup {
+      width: 250px;
+      height: 500px;
+      background-color: black;
+      border-radius: 40px;
+      padding: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .phone-mockup video {
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      object-fit: contain;
+    }
+
+    /* Tools */
+    .card-tools h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .tools-icons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .tools-icons img {
+      width: 35px;
+      height: 35px;
+    }
+
+    /* Tombol Kembali */
+    .btn-detail {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      width: fit-content;
+    }
+
+    .btn-detail:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-section, .right-section {
+        flex: 1 1 100%;
+      }
+
+      .card-video video {
+        max-height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Kiri: Deskripsi + Tools + Tombol -->
+    <div class="left-section">
+      <div class="card card-desc">
+        <h1>Desain UI Sistem Pencatatan Hutang</h1>
+        <p>
+          Project ini adalah desain <strong>User Interface (UI)</strong> untuk aplikasi <strong>Sistem Pencatatan Hutang</strong> berbasis web. Tujuannya untuk memudahkan pengguna dalam mencatat, memantau, dan mengelola hutang-piutang secara rapi.
+        </p>
+        <p>
+          Desain UI dibuat dengan tampilan yang modern, simple, dan mudah digunakan bahkan oleh pengguna awam.
+        </p>
+        <p><strong>Fitur yang dirancang dalam UI:</strong></p>
+        <ul>
+          <li>Dashboard total hutang dan piutang</li>
+          <li>Form input data hutang/piutang</li>
+          <li>Riwayat transaksi</li>
+          <li>Notifikasi pengingat pembayaran</li>
+          <li>Profil pengguna</li>
+        </ul>
+        <p>
+          <strong>Tools:</strong> Figma<br>
+          <strong>Peran:</strong> UI/UX Designer
+        </p>
+      </div>
+
+      <div class="card card-tools">
+        <h3>Tools</h3>
+        <div class="tools-icons">
+          <img src="images/figma.png" alt="Figma">
+        </div>
+      </div>
+
+      <a href="index.html#projects" class="btn-detail">Kembali</a>
+    </div>
+
+    <!-- Kanan: Video -->
+    <div class="right-section">
+      <div class="card card-video">
+        <div class="phone-mockup">
+          <video controls>
+            <source src="vidio/sipetang.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
+          </video>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

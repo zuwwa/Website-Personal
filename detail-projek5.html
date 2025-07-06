@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Projek - Redesain Shipping Rates J&T Express</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 55%;
+      gap: 20px;
+      min-width: 320px;
+    }
+
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 35%;
+      gap: 20px;
+      min-width: 280px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    /* Card Deskripsi */
+    .card-desc h1 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #007bff;
+    }
+
+    .card-desc p {
+      line-height: 1.7;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .card-desc ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .card-desc ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Card Video */
+    .card-video {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .phone-mockup {
+      width: 250px;
+      height: 500px;
+      background-color: black;
+      border-radius: 40px;
+      padding: 10px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .phone-mockup video {
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      object-fit: contain;
+    }
+
+    /* Card Tools */
+    .card-tools h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .tools-icons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .tools-icons img {
+      width: 35px;
+      height: 35px;
+    }
+
+    /* Tombol Kembali */
+    .btn-detail {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      width: fit-content;
+    }
+
+    .btn-detail:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-section, .right-section {
+        flex: 1 1 100%;
+      }
+
+      .card-video {
+        justify-content: center;
+      }
+
+      .card-video video {
+        max-height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Kiri: Deskripsi + Tools + Tombol -->
+    <div class="left-section">
+      <div class="card card-desc">
+        <h1>Redesain Halaman Shipping Rates J&T Express</h1>
+        <p>
+          Project ini merupakan desain ulang halaman <strong>Shipping Rates</strong> dari website J&T Express. Fokus utama adalah meningkatkan pengalaman pengguna di tampilan <em>mobile</em>, agar lebih informatif, modern, dan mudah digunakan.
+        </p>
+        <p>
+          Desain menekankan kemudahan navigasi, keterbacaan informasi harga pengiriman, dan responsivitas antar perangkat.
+        </p>
+        <p><strong>Peran:</strong> UI/UX Designer</p>
+      </div>
+
+      <!-- Card Tools -->
+      <div class="card card-tools">
+        <h3>Tools</h3>
+        <div class="tools-icons">
+          <img src="images/figma.png" alt="Figma">
+        </div>
+      </div>
+
+      <!-- Tombol Kembali -->
+      <a href="index.html#projects" class="btn-detail">Kembali</a>
+    </div>
+
+    <!-- Kanan: Video -->
+    <div class="right-section">
+      <div class="card card-video">
+        <div class="phone-mockup">
+          <video controls>
+            <source src="vidio/jnt.mp4" type="video/mp4">
+            Browser Anda tidak mendukung video.
+          </video>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

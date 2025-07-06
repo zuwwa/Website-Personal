@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Projek - Website Perpustakaan</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 55%;
+      gap: 20px;
+      min-width: 320px;
+    }
+
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 35%;
+      gap: 20px;
+      min-width: 280px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    /* Card Deskripsi */
+    .card-desc h1 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #007bff;
+    }
+
+    .card-desc p {
+      line-height: 1.7;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .card-desc ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .card-desc ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Card Gambar */
+    .card-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    /* Card Tools */
+    .card-tools h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .tools-icons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .tools-icons img {
+      width: 35px;
+      height: 35px;
+    }
+
+    /* Tombol Kembali */
+    .btn-detail {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      width: fit-content;
+    }
+
+    .btn-detail:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-section, .right-section {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Kiri: Deskripsi + Tombol -->
+    <div class="left-section">
+      <!-- Card Deskripsi -->
+      <div class="card card-desc">
+        <h1>Website Perpustakaan</h1>
+        <p>
+          Project ini adalah pengembangan <strong>Website Perpustakaan</strong> yang digunakan untuk mempermudah manajemen data buku, peminjaman, pengembalian, dan pencarian buku oleh siswa secara online.
+        </p>
+        <p>
+          Sistem ini dibuat untuk mendigitalisasi layanan perpustakaan sekolah dengan fitur yang lengkap serta sistem login untuk siswa dan admin.
+        </p>
+        <p><strong>Fitur utama pada website ini:</strong></p>
+        <ul>
+          <li>Login untuk admin </li>
+          <li>Manajemen data buku</li>
+          <li>Peminjaman dan pengembalian buku</li>
+          <li>Pencarian buku berdasarkan judul atau kategori</li>
+          <li>Dashboard laporan buku dan transaksi</li>
+        </ul>
+        <p>
+          <strong>Tools:</strong> HTML, CSS, PHP, MySQL<br>
+          <strong>Peran:</strong> Fullstack Developer
+        </p>
+      </div>
+
+      <!-- Tombol Kembali -->
+      <a href="index.html#projects" class="btn-detail">Kembali</a>
+    </div>
+
+    <!-- Kanan: Gambar + Tools -->
+    <div class="right-section">
+      <!-- Card Gambar -->
+      <div class="card card-image">
+        <img src="images/perpus.png" alt="Tampilan Website Perpustakaan">
+      </div>
+
+      <!-- Card Tools -->
+      <div class="card card-tools">
+        <h3>Tools</h3>
+        <div class="tools-icons">
+          <img src="images/html.png" alt="HTML">
+          <img src="images/css.png" alt="CSS">
+          <img src="images/php.png" alt="PHP">
+          <img src="images/mysql.png" alt="MySQL">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

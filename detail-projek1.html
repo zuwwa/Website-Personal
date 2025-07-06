@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Projek - Sistem Antrian Klinik</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .left-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 55%;
+      gap: 20px;
+      min-width: 320px;
+    }
+
+    .right-section {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 35%;
+      gap: 20px;
+      min-width: 280px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+
+    /* Card Deskripsi */
+    .card-desc h1 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      color: #007bff;
+    }
+
+    .card-desc p {
+      line-height: 1.7;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .card-desc ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    .card-desc ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Card Gambar */
+    .card-image img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    /* Card Tools */
+    .card-tools h3 {
+      color: #007bff;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .tools-icons {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .tools-icons img {
+      width: 35px;
+      height: 35px;
+    }
+
+    /* Tombol Kembali */
+    .btn-detail {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+      width: fit-content;
+    }
+
+    .btn-detail:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-section, .right-section {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Kiri: Deskripsi + Tombol -->
+    <div class="left-section">
+      <!-- Card Deskripsi -->
+      <div class="card card-desc">
+        <h1>Sistem Antrian Klinik</h1>
+        <p>
+          Project ini adalah perancangan <strong>User Interface (UI)</strong> untuk sistem antrian klinik berbasis website. Fokusnya adalah menciptakan antarmuka yang <em>responsif</em>, mudah digunakan, dan membantu pasien dalam pendaftaran antrian secara online.
+        </p>
+        <p>
+          Tujuan dari project ini untuk mempermudah proses pendaftaran dan pengelolaan antrian pada layanan klinik, mengurangi kerumunan, dan mempercepat layanan.
+        </p>
+        <p><strong>Fitur yang dirancang dalam UI:</strong></p>
+        <ul>
+          <li>Halaman pendaftaran antrian online</li>
+          <li>Dashboard status antrian pasien</li>
+          <li>Notifikasi panggilan antrian</li>
+          <li>Riwayat kunjungan pasien</li>
+          <li>Admin panel untuk kelola data pasien dan antrian</li>
+        </ul>
+        <p>
+          <strong>Tools:</strong> Figma, HTML, CSS<br>
+          <strong>Peran:</strong> UI Designer
+        </p>
+      </div>
+
+      <!-- Tombol Kembali -->
+      <a href="index.html#projects" class="btn-detail">Kembali</a>
+    </div>
+
+    <!-- Kanan: Gambar + Tools -->
+    <div class="right-section">
+      <!-- Card Gambar -->
+      <div class="card card-image">
+        <img src="images/sianik1.png" alt="Tampilan Sistem Antrian Klinik">
+        <img src="images/sianik2.png" alt="Tampilan Sistem Antrian Klinik">
+      </div>
+
+      <!-- Card Tools -->
+      <div class="card card-tools">
+        <h3>Tools</h3>
+        <div class="tools-icons">
+          <img src="images/figma.png" alt="Figma">
+          <img src="images/html.png" alt="HTML">
+          <img src="images/css.png" alt="CSS">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
